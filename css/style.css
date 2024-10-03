@@ -1,0 +1,132 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Start Navbar */
+.header{
+    background-color: white;
+    position: relative;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.navbar .icon-left{
+
+}
+
+
+.navbar .icon-left i{
+    color: #1787e0;
+    font-size: 24px;
+}
+
+.navbar  .navbar-logo{
+    
+}
+.navbar  .navbar-logo strong{
+    font-weight: bold;
+    color: black;
+    font-size: 24px;
+}
+
+.navbar .links{
+
+}
+
+.navbar .links ul{
+    display: flex;
+}
+
+.navbar .links ul li{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.navbar .links .drop-down::before{
+    content: "";
+    position: relative;
+    border: 6px solid;
+    border-color: black transparent transparent transparent;
+    top: 20px;
+    left: 135px;
+}
+
+.navbar .links ul a{
+    color: black;
+}
+
+.navbar .links ul li i{
+    margin: 5px;
+    color: #1787e0;
+    font-size: 18px;
+}
+
+
+/* End navbar */
